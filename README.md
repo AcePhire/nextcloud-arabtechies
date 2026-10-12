@@ -4,6 +4,15 @@
 2. Switch **Language** to **اللغة العربية**
 3. Switch **Locale** to **Arabic(*your_country*)**
 4. Set **First day of the week** to Sunday/Saturday
+---
+You can also set Arabic as the default language
+```
+php occ config:system:set default_language --value="ar"
+```
+or if Nextcloud is hosted using the docker-compose file:
+```
+docker compose exec -it app php occ config:system:set default_language --value="ar"
+```
 ## Fixing Visual Bugs with Custom CSS
 1. Go to app store in Nextcloud
 2. Search for "Custom CSS"
@@ -77,7 +86,7 @@ Run this command on the Nextcloud instance:
 ```
 php occ fulltextsearch:index
 ```
-If Nextcloud is hosted using the **Docker Compose file**, then run this command instead:
+or if Nextcloud is hosted using the docker-compose file:
 ```
 docker compose exec -it app php occ fulltextsearch:index
 ```
