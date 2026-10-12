@@ -47,7 +47,7 @@
 ### Elasticsearch Configuration
 1. Add Arabic text search to Elasticsearch analyzer
 
-Send this POST request to Elasticsearch:
+Send these POST requests to Elasticsearch:
 ```
 curl -X DELETE {elasticsearch_URI}/nextcloud
 ```
