@@ -50,7 +50,8 @@
 Send this POST request to Elasticsearch:
 ```
 curl -X DELETE {elasticsearch_URI}/nextcloud
-
+```
+```
 curl -X PUT {elasticsearch_URI}/nextcloud -H 'Content-Type: application/json' -d '{
   "settings": {
     "number_of_replicas": 0,
